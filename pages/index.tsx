@@ -8,8 +8,9 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { GoBookmark } from "react-icons/go";
 
-
 import { Inter } from "next/font/google";
+import FeedCard from "@/components/FeedCard";
+// import FeedCard from "@/components/FeedCard/indexx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,7 +63,7 @@ export default function Home() {
     <div>
       <div className="grid grid-cols-12 h-screen w-screen px-12">
 
-        <div className="col-span-3 border-2 border-red-600 pl-8 pt-2">
+        <div className="col-span-3  pl-8 pt-2">
 
           <div className="text-3xl hover:bg-gray-200 rounded-full p-4 w-fit transition-all">
 
@@ -73,7 +74,7 @@ export default function Home() {
 
            <ul>
             {sideBaeMenuItems.map((item) => (
-            <li className="flex justify-start items-center gap-5 hover:bg-gray-200 rounded-full pt-3 px-4 py-3 w-fit cursor-pointer transition-all" key={item.title}>
+            <li className="flex justify-start items-center gap-5 hover:bg-gray-200 rounded-full pt-1 px-4 py-3 w-fit cursor-pointer transition-all " key={item.title}>
               <span>{item.icon}</span>
               <span>{item.title}</span>
               </li>
@@ -86,8 +87,14 @@ export default function Home() {
 
         </div>
         
-        <div className="col-span-6 border-2 border-green-600"></div>
-        <div className="col-span-3 border-2 border-gray-700"></div>
+        <div className="col-span-6 border border-[#CFD9DE]">
+        <FeedCard />
+        <FeedCard />
+        <FeedCard />
+        <FeedCard />
+        <FeedCard />
+        </div>
+        <div className="col-span-3"></div>
       </div>
     </div>
     
