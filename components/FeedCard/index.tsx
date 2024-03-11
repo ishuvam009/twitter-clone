@@ -19,7 +19,7 @@ const FeedCard: React.FC = () => {
                             <Image src='https://pbs.twimg.com/profile_images/1742855219053314048/7kuSNnyX_400x400.jpg' alt='user-iamge' height={50} width={50} className='rounded-full p-2' />
                         </div>
                         <div className='col-span-11 pb-4 pr-4'>
-                            <h5>Nishita</h5>
+                            <h5 className='font-semibold	'>Nishita</h5>
                             <p>
                             {/* https://twitter.com/Shristitwtsss/photo */}
                             Topper se bs pass hone wala transition hi aaye h  college me 🥲🥲

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 import { FaXTwitter } from "react-icons/fa6";
 import { GoHomeFill } from "react-icons/go";
 import { IoIosSearch } from "react-icons/io";
@@ -7,6 +8,8 @@ import { HiOutlineEnvelope } from "react-icons/hi2";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { GoBookmark } from "react-icons/go";
+import { RiTwitterXLine } from "react-icons/ri";
+import { CiCircleMore } from "react-icons/ci";
 
 import { Inter } from "next/font/google";
 import FeedCard from "@/components/FeedCard";
@@ -42,6 +45,11 @@ const sideBaeMenuItems: TwitterSidebarButton[] = [
   },
 
   {
+    title: "Premium",
+    icon: <RiTwitterXLine />,
+  },
+
+  {
     title: "Bookmarks",
     icon: <GoBookmark />,
   },
@@ -49,6 +57,11 @@ const sideBaeMenuItems: TwitterSidebarButton[] = [
   {
     title: "Profle",
     icon: <CiUser />,
+  },
+
+  {
+    title: "More",
+    icon: <CiCircleMore />,
   },
 
   // {
@@ -87,13 +100,14 @@ export default function Home() {
 
         </div>
         
-        <div className="col-span-6 border border-[#CFD9DE]">
+        <div className="col-span-6 border border-[#CFD9DE] h-screen overflow-scroll">
         <FeedCard />
         <FeedCard />
         <FeedCard />
         <FeedCard />
         <FeedCard />
         </div>
+
         <div className="col-span-3"></div>
       </div>
     </div>
