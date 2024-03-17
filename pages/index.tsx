@@ -13,6 +13,7 @@ import { CiCircleMore } from "react-icons/ci";
 
 import { Inter } from "next/font/google";
 import FeedCard from "@/components/FeedCard";
+import {GoogleLogin} from "@react-oauth/google";
 // import FeedCard from "@/components/FeedCard/indexx";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -76,9 +77,11 @@ export default function Home() {
     <div>
       <div className="grid grid-cols-12 h-screen w-screen px-12">
 
+        {/* //First Column */}
+
         <div className="col-span-3  pl-8 pt-2">
 
-          <div className="text-3xl hover:bg-gray-200 rounded-full p-4 w-fit transition-all">
+          <div className="text-3xl hover:bg-gray-200 rounded-full p-4 w-fit transition-all cursor-pointer">
 
           <FaXTwitter />
           </div>
@@ -100,6 +103,8 @@ export default function Home() {
 
         </div>
         
+        {/* // Second Column */}
+
         <div className="col-span-6 border border-[#CFD9DE] h-screen overflow-scroll">
         <FeedCard />
         <FeedCard />
@@ -108,7 +113,16 @@ export default function Home() {
         <FeedCard />
         </div>
 
-        <div className="col-span-3"></div>
+        {/* Third Column */}
+
+        <div className="col-span-3 p-5">
+          <div className="p-5 bg-[#EFF3F4] rounded-3xl">
+              <h1 className="mx-3 my-2 text-2xl">New To Twitter!</h1>
+              <div className="mx-3">
+              <GoogleLogin onSuccess={(cred) => console.log(cred)} />
+              </div>
+          </div>    
+        </div>
       </div>
     </div>
     
