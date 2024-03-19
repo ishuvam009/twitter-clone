@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 import { FaXTwitter } from "react-icons/fa6";
-import { GoHomeFill } from "react-icons/go";
+import { GoHomeFill, GoBookmark } from "react-icons/go";
 import { IoIosSearch } from "react-icons/io";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
-import { GoBookmark } from "react-icons/go";
+// import { GoBookmark } from "react-icons/go";
 import { RiTwitterXLine } from "react-icons/ri";
 import { CiCircleMore } from "react-icons/ci";
 
