@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Image from "next/image";
 
 import { FaXTwitter } from "react-icons/fa6";
@@ -13,7 +13,7 @@ import { CiCircleMore } from "react-icons/ci";
 
 import { Inter } from "next/font/google";
 import FeedCard from "@/components/FeedCard";
-import {GoogleLogin} from "@react-oauth/google";
+import {CredentialResponse, GoogleLogin} from "@react-oauth/google";
 // import FeedCard from "@/components/FeedCard/indexx";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -73,6 +73,11 @@ const sideBaeMenuItems: TwitterSidebarButton[] = [
 ];
 
 export default function Home() {
+
+  const handleLoginWithGoogle = useCallback((cred: CredentialResponse) => {
+    
+  }, [])
+
   return (
     <div>
       <div className="grid grid-cols-12 h-screen w-screen px-12">
