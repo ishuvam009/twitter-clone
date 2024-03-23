@@ -80,11 +80,11 @@ export default function Home() {
 
   return (
     <div>
-      <div className="grid grid-cols-12 h-screen w-screen px-12">
+      <div className="grid grid-cols-12 h-screen w-screen px-12 fixed">
 
         {/* //First Column */}
 
-        <div className="col-span-3  pl-8 pt-2">
+        <div className="col-span-3  pl-8 pt-2 overflow-y-auto">
 
           <div className="text-3xl hover:bg-gray-200 rounded-full p-4 w-fit transition-all cursor-pointer">
 
@@ -110,7 +110,11 @@ export default function Home() {
         
         {/* // Second Column */}
 
-        <div className="col-span-6 border border-[#CFD9DE] h-screen overflow-scroll">
+        <div className="col-span-6 border border-[#CFD9DE] overflow-y-scroll no-scrollbar">
+        <FeedCard />
+        <FeedCard />
+        <FeedCard />
+        <FeedCard />
         <FeedCard />
         <FeedCard />
         <FeedCard />
