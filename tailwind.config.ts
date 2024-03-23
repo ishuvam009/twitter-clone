@@ -15,21 +15,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        ".no-scrollbar::-webkit-scrollbar": {
-          display: "none",
-        },
-
-        ".no-scrollvar": {
-          "-ms-overflow-style": "none",
-          "scrollbar-width": "none",
-        },
-      };
-
-      addUtilities(newUtilities);
-    },
-  ],
+  plugins: [],
 };
 export default config;
