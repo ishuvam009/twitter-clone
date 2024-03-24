@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
         <div>
           <GoogleOAuthProvider clientId="100629815061-akv87j39c9720gt0sak87g6p88figrta.apps.googleusercontent.com">
-              <Component {...pageProps} />;
+              <Component {...pageProps} />
               </GoogleOAuthProvider>    
         </div>  
   )
