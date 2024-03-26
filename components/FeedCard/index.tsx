@@ -16,7 +16,7 @@ const FeedCard: React.FC = () => {
                 <div className='border-b border-[#CFD9DE] hover:bg-gray-100 transition-all cursor-pointer'>
                     <div className='grid grid-cols-12'>
                         <div className='col-span-1'>
-                            <Image src='https://pbs.twimg.com/profile_images/1742855219053314048/7kuSNnyX_400x400.jpg' alt='user-iamge' height={50} width={50} className='rounded-full p-2' />
+                            <Image src='https://pbs.twimg.com/profile_images/1767769744168357888/fP281MWM_400x400.jpg' alt='user-iamge' height={50} width={50} className='rounded-full p-2' />
                         </div>
                         <div className='col-span-11 pb-4 pr-4'>
                             <h5 className='font-semibold	'>Nishita</h5>
